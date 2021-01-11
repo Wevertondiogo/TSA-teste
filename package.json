@@ -1,0 +1,21 @@
+{
+  "name": "tsa",
+  "version": "1.0.0",
+  "description": "\"# TSA-teste\"",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wevertondiogo/TSA-teste.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wevertondiogo/TSA-teste/issues"
+  },
+  "homepage": "https://github.com/Wevertondiogo/TSA-teste#readme",
+  "dependencies": {
+  }
+}
