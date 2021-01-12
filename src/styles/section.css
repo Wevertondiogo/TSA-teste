@@ -1,0 +1,21 @@
+.section {
+  height: 20vh;
+}
+.section .container {
+  display: flex;
+  justify-content: center;
+
+  height: 100%;
+}
+.container .box {
+  display: flex;
+  align-items: center;
+
+  width: 50%;
+}
+.box h1 {
+  color: #445566;
+
+  font-weight: bold;
+  font-style: italic;
+}

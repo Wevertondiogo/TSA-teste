@@ -7,6 +7,9 @@
     <title>Teste front end </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -31,9 +34,139 @@
             </div>
         </nav>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <section class="section">
+        <div class="container">
+            <div class="box">
+                <h1 class="display-2">Cadastro</h1>
+            </div>
+        </div>
+    </section>
+    <main class="main">
+        <div class="container">
+            <form class="form">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" class="form-control  form-control-lg" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control  form-control-lg" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="CPF">CPF</label>
+                    <input type="text" class="form-control  form-control-lg" id="CPF" placeholder="111.111.111-01">
+                </div>
+                <div class="form-group row">
+                    <div class="col">
+                        <label for="endereço">Endereço</label>
+                        <input type="text" class="form-control  form-control-lg" id="endereço"
+                            placeholder="Rua, Número e bairro">
+                    </div>
+                    <div class="col">
+                        <label for="estado" id="estado">Estado</label>
+                        <select id="estado">
+                            <option value="hide">Selecione o Estado</option>
+                            <option value="january" rel="icon-temperature">Minas gerais</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col">
+                        <label for="cep">CEP</label>
+                        <input type="text" class="form-control  form-control-lg" id="cep" placeholder="22.222-000">
+                    </div>
+                    <div class="col">
+                        <label for="cidade" id="cidade">Cidade</label>
+                        <select id="cidade">
+                            <option value="hide">Selecione a Cidade</option>
+                            <option value="january" rel="icon-temperature">Belo Hozonte, MG</option>
+                        </select>
+                    </div>
+                </div>
+
+                <br />
+                <span class="span">
+                    Forma de Pagamento
+                </span>
+
+                <hr>
+                <br>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="creditCard"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Cartão de Crédito</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Boleto Bancário</label>
+                </div>
+
+                <br> <br>
+                <div class="form-group row">
+                    <div class="col">
+                        <label for="cardName">Nome do Cartão</label>
+                        <input type="text" class="form-control  form-control-lg" id="cardName"
+                            placeholder="Nome impresso no cartão">
+                    </div>
+                    <div class="col">
+                        <label for="expiracao" id="expiracao">Data de Expiração</label>
+                        <div class="box">
+                            <select id="mouth">
+                                <option value="hide">Mês</option>
+                                <option value="mouth" rel="icon-temperature">Janeiro</option>
+                            </select>
+                            <select id="age">
+                                <option value="hide">Ano</option>
+                                <option value="age" rel="icon-temperature" class="id">Ano</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row" style="margin-bottom: 35px;">
+                    <div class="col">
+                        <label for="cardNumber">Número do cartão</label>
+                        <input type="text" class="form-control  form-control-lg" id="cardNumber"
+                            placeholder="5555 5555 5555 5555">
+                    </div>
+                    <div class="col">
+                        <label for="seguriyCode" id="cidade">Código de segurança</label>
+                        <input type="text" class="form-control  form-control-lg" id="seguriyCode" placeholder="XXX">
+
+                    </div>
+                </div>
+                <hr>
+                <br> 
+                <div class="form-footer">
+                    <ul>
+                        <h5>Seu cartão será debitado em R$ 49,00</h5>
+                        <button class="btn btn-lg" type="submit">Realizar matrícula</button>
+                        <small>informações seguras e criptografadas</small>
+                    </ul>
+                </div>
+        </div>
+        </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <h5>
+                Weverton procópio - 2021
+            </h5>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
     <script src="scripts/main.js"></script>
 </body>
 

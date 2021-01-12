@@ -1,0 +1,32 @@
+.footer {
+  height: 15vh;
+  background-color: #1188ee;
+}
+.footer .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.footer .container h5 {
+  color: #eff4f9;
+
+  font-weight: bold;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 767px) {
+  .footer .container h5 {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 536px) {
+  .footer .container h5 {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 418px) {
+  .footer .container h5 {
+    font-size: 0.5rem;
+  }
+}

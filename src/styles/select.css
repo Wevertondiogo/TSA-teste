@@ -1,0 +1,149 @@
+.box .select-styled {
+  width: 85% !important;
+}
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+
+.select {
+  position: relative;
+
+  cursor: pointer;
+  display: inline-block;
+
+  font-size: 16px;
+  color: #445566;
+
+  width: 95%;
+  min-height: calc(1.5em + 1rem + 2px);
+  padding: 1.7rem 1.8rem;
+
+  border-radius: 0.3rem;
+}
+
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+
+  background-color: #eff4f9;
+  box-shadow: 0px 2px 2px rgba(187, 204, 221, 0.4);
+  color: #445566;
+
+  font-weight: bold;
+  font-size: 1.1rem;
+
+  padding: 8px 15px;
+}
+option {
+  opacity: 0.5;
+}
+.select-styled:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid #445566;
+  border-color: #445566 transparent transparent transparent;
+
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  background-color: #eff4f9;
+}
+.select-options li {
+  margin: 0;
+  padding: 12px 0;
+
+  text-indent: 15px;
+  transition: all 0.15s ease-in;
+}
+.select-options li:hover {
+  color: #eff4f9;
+  background: #445566;
+}
+.select-options li[rel="hide"] {
+  display: none;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .select-styled,
+  .select {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .select-styled,
+  .select {
+    font-size: 0.8rem;
+  }
+  .select {
+    padding: 1.5rem 1.8rem;
+  }
+  .select-styled:after {
+    top: 45%;
+    right: 5px;
+    border: 5px solid #445566;
+    border-color: #445566 transparent transparent transparent;
+  }
+}
+
+@media screen and (max-width: 536px) {
+  .select-styled,
+  .select {
+    font-size: 0.7rem;
+  }
+  .select {
+    padding: 1.5rem 1.8rem;
+  }
+  .select-styled:after {
+    top: 45%;
+    right: 5px;
+    border: 5px solid #445566;
+    border-color: #445566 transparent transparent transparent;
+  }
+}
+@media (min-width: 300px) and (max-width: 418px) {
+  #expiracao {
+    font-size: 0.5rem;
+    width: 120%;
+  }
+  .box .select-styled {
+    width: 50%;
+  }
+  .select-styled,
+  .select {
+    font-size: 0.5rem;
+  }
+  .select {
+    padding: 1.3rem 1.5rem;
+  }
+  .select-styled:after {
+    top: 45%;
+    right: 5px;
+    border: 5px solid #445566;
+    border-color: #445566 transparent transparent transparent;
+  }
+}
