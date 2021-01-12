@@ -46,21 +46,23 @@
             <form class="form">
                 <div class="form-group">
                     <label for="name">Nome</label>
-                    <input type="text" class="form-control  form-control-lg" id="name">
+                    <input type="text" class="form-control  form-control-lg" id="name" required minlength="3" maxlength="10">
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="text" class="form-control  form-control-lg" id="email">
+                    <input type="email" class="form-control  form-control-lg" id="email" required maxlength="300"  pattern="
+                        ^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$">
                 </div>
                 <div class="form-group">
                     <label for="CPF">CPF</label>
-                    <input type="text" class="form-control  form-control-lg" id="CPF" placeholder="111.111.111-01">
+                    <input type="text" class="form-control  form-control-lg" id="CPF" placeholder="111.111.111-01"
+                        required>
                 </div>
                 <div class="form-group row">
                     <div class="col">
                         <label for="endereço">Endereço</label>
                         <input type="text" class="form-control  form-control-lg" id="endereço"
-                            placeholder="Rua, Número e bairro">
+                            placeholder="Rua, Número e bairro" required>
                     </div>
                     <div class="col">
                         <label for="estado" id="estado">Estado</label>
@@ -74,7 +76,8 @@
                 <div class="form-group row">
                     <div class="col">
                         <label for="cep">CEP</label>
-                        <input type="text" class="form-control  form-control-lg" id="cep" placeholder="22.222-000">
+                        <input type="text" class="form-control  form-control-lg" id="cep" placeholder="22.222-000"
+                            required>
                     </div>
                     <div class="col">
                         <label for="cidade" id="cidade">Cidade</label>
@@ -108,7 +111,7 @@
                     <div class="col">
                         <label for="cardName">Nome do Cartão</label>
                         <input type="text" class="form-control  form-control-lg" id="cardName"
-                            placeholder="Nome impresso no cartão">
+                            placeholder="Nome impresso no cartão" required>
                     </div>
                     <div class="col">
                         <label for="expiracao" id="expiracao">Data de Expiração</label>
@@ -129,20 +132,22 @@
                     <div class="col">
                         <label for="cardNumber">Número do cartão</label>
                         <input type="text" class="form-control  form-control-lg" id="cardNumber"
-                            placeholder="5555 5555 5555 5555">
+                            placeholder="5555 5555 5555 5555" required>
                     </div>
                     <div class="col">
                         <label for="seguriyCode" id="cidade">Código de segurança</label>
-                        <input type="text" class="form-control  form-control-lg" id="seguriyCode" placeholder="XXX">
+                        <input type="text" class="form-control  form-control-lg" id="seguriyCode" placeholder="XXX"
+                            required>
 
                     </div>
                 </div>
                 <hr>
-                <br> 
+                <br>
                 <div class="form-footer">
                     <ul>
                         <h5>Seu cartão será debitado em R$ 49,00</h5>
-                        <button class="btn btn-lg" type="submit">Realizar matrícula</button>
+                        <button class="btn btn-lg" type="submit">Realizar
+                            matrícula</button>
                         <small>informações seguras e criptografadas</small>
                     </ul>
                 </div>
@@ -150,7 +155,7 @@
         </form>
         </div>
     </main>
-    <footer class="footer">
+    <footer class=" footer">
         <div class="container">
             <h5>
                 Weverton procópio - 2021
@@ -167,7 +172,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <script src="scripts/main.js"></script>
+    <script type="module" src="scripts/main.js"></script>
 </body>
 
 </html>

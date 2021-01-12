@@ -1,3 +1,4 @@
+import "./auth.js";
 const creditCard = document.querySelector("#creditCard");
 creditCard.checked = true;
 

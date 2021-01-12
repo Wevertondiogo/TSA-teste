@@ -1,4 +1,5 @@
 @import "./select.css";
+@import './auth.css';
 .main {
   background-color: #fff;
 }
