@@ -1,5 +1,6 @@
 const CPF = document.querySelector("#CPF");
 const cardNumber = document.querySelector("#cardNumber");
+const CEP = document.querySelector("#CEP");
 //RETORNANDO INDEX E INCREMENT
 const increment = (...increment) => increment[0];
 const handleIndex = (...index) => index[0];
@@ -19,7 +20,14 @@ function formatField(field, increment, index) {
   if (length === i1) field.value += inc1;
   if (length === i2) field.value += inc2;
   if (length === i3) field.value += inc3;
+
   return field.value;
+}
+function formatCEP(CEP) {
+  const length = CEP.value.length;
+
+  if (length === 5) CEP.value += "-";
+  return CEP.value;
 }
 
 CPF.addEventListener("keydown", (event) =>
@@ -33,3 +41,4 @@ cardNumber.addEventListener("keydown", (event) =>
     handleIndex(cardNumberIndex)
   )
 );
+CEP.addEventListener("keydown", (event) => formatCEP(event.target));
