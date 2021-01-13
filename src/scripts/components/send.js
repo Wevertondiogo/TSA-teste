@@ -1,3 +1,4 @@
+import "./format.js";
 import { touchedField, handleError } from "./auth.js";
 import { Post } from "../data/mock.js";
 
@@ -9,7 +10,6 @@ const allInputs = queryAll("input");
 
 function onSubmit(event, fields) {
   // VERICA-SE O EVENT DO CLICK TEM A CLASSE BTN
-  console.log(event.target);
   if (!event.target.classList.contains("btn")) return;
 
   const [name, email, CPF] = fields;

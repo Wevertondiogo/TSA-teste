@@ -20,17 +20,7 @@ function hasError(field) {
 
   if (validity.patternMismatch) return "Formato não correspondente.";
 }
-// const CPF = document.querySelector("#CPF");
-// const addFormat = (CPF) => {
-//   const length = CPF.length;
-//   if (length === 3) CPF += ".";
-//   if (length === 7) CPF += ".";
-//   if (length === 11) CPF += "-";
 
-//   return email;
-// };
-// CPF.addEventListener("change", (event) => console.log(event.target));
-// console.log(addFormat("111"));
 function showError(field, error) {
   field.classList.add("error");
 
