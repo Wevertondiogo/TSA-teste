@@ -36,3 +36,9 @@
   - background: #EFF4F9
 - labels
   - color: #445566
+
+PASSOS PARA RODAR O PROJETO
+
+1- npm i, para instalar as dependências do projeto
+2 - a modularização necessita de um server um localhost já e o bastante (recomendo a instalação do live server)
+3 - de um json-server db.json para o cadastro funcionar direito.
