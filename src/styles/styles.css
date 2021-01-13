@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,700&display=swap");
 @import "./header.css";
 @import "./section.css";
-@import "./signUp.css";
+@import "./form/signUp.css";
 @import "./footer.css";
 @import "./../list/list.css";
 body {

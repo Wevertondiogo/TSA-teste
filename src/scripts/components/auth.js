@@ -67,8 +67,6 @@ function touchedField(event) {
 }
 
 function handleError(event, fields) {
-  if (!event.target.classList.contains("btn")) return;
-
   let error;
   let hasErrors;
 

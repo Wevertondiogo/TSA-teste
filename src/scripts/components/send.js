@@ -1,5 +1,5 @@
 import { touchedField, handleError } from "./auth.js";
-import { Post } from "./mock.js";
+import { Post } from "../data/mock.js";
 
 const query = (q) => document.querySelector(q);
 const queryAll = (q) => document.querySelectorAll(q);
@@ -8,6 +8,7 @@ const form = query(".form");
 const allInputs = queryAll("input");
 
 function onSubmit(event, fields) {
+  // VERICA-SE O EVENT DO CLICK TEM A CLASSE BTN
   if (!event.target.classList.contains("btn")) return;
 
   const [name, email, CPF] = fields;
@@ -18,7 +19,6 @@ form.addEventListener("blur", (event) => touchedField(event), true);
 
 form.addEventListener("click", (event) => {
   handleError(event, allInputs);
-  console.log(!handleError(event, allInputs));
   if (!handleError(event, allInputs)) onSubmit(event, allInputs);
 });
 
@@ -40,7 +40,7 @@ function sendData(name, email, CPF) {
     CPF,
     currentDate: currentDate(),
   };
-
+  // ENVIANDO DADOS PARA O JSON-SERVER
   Post(users);
   // .then(() => (window.location.href = "./../list/list.html"))
   // .catch((error) => console.error(error.message));

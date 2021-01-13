@@ -1,4 +1,4 @@
-import { GetUsers } from "./../scripts/mock.js";
+import { GetUsers } from "../scripts/data/mock.js";
 
 const tbody = document.querySelector("tbody");
 
