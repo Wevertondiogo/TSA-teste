@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="header">
+    <header class="header">
 
         <nav class="navbar navbar-expand-lg d-flex justify-content-end">
             <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -25,15 +25,15 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto ">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Lista</a>
+                        <a class="nav-link" href="./list/list.html">Lista</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cadastro</a>
+                        <a class="nav-link" href="./index.html">Cadastro</a>
                     </li>
                 </ul>
             </div>
         </nav>
-    </div>
+    </header>
     <section class="section">
         <div class="container">
             <div class="box">
@@ -46,17 +46,17 @@
             <form class="form">
                 <div class="form-group">
                     <label for="name">Nome</label>
-                    <input type="text" class="form-control  form-control-lg" id="name" required minlength="3" maxlength="10">
+                    <input type="text" class="form-control  form-control-lg" id="name" required minlength="3" maxlength="100">
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control  form-control-lg" id="email" required maxlength="300"  pattern="
-                        ^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$">
+                    <input type="email" class="form-control  form-control-lg" id="email" required maxlength="300"  pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
                 </div>
                 <div class="form-group">
                     <label for="CPF">CPF</label>
                     <input type="text" class="form-control  form-control-lg" id="CPF" placeholder="111.111.111-01"
-                        required>
+                        required pattern="^((\d{3}).(\d{3}).(\d{3})-(\d{2}))*$"
+                        maxlength="14">
                 </div>
                 <div class="form-group row">
                     <div class="col">
@@ -77,7 +77,7 @@
                     <div class="col">
                         <label for="cep">CEP</label>
                         <input type="text" class="form-control  form-control-lg" id="cep" placeholder="22.222-000"
-                            required>
+                            required pattern="[0-9]{5}-[\d]{3}">
                     </div>
                     <div class="col">
                         <label for="cidade" id="cidade">Cidade</label>
@@ -132,7 +132,7 @@
                     <div class="col">
                         <label for="cardNumber">Número do cartão</label>
                         <input type="text" class="form-control  form-control-lg" id="cardNumber"
-                            placeholder="5555 5555 5555 5555" required>
+                            placeholder="5555 5555 5555 5555" required pattern="\d{4}[ -]\d{4}[ -]\d{4}[ -]\d{4}">
                     </div>
                     <div class="col">
                         <label for="seguriyCode" id="cidade">Código de segurança</label>
@@ -176,3 +176,4 @@
 </body>
 
 </html>
+

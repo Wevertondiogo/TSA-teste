@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "name": "Weverton",
+      "email": "wevertonprocopio690@gmail.com",
+      "CPF": "111.111.111-11",
+      "currentDate": "13/01/2021",
+      "id": 1
+    },
+    {
+      "name": "tst",
+      "email": "tst@gmail.com",
+      "CPF": "222.222.222-22",
+      "currentDate": "13/01/2021",
+      "id": 2
+    },
+    {
+      "name": "tst3",
+      "email": "tst3@gmail.com",
+      "CPF": "333.333.333-33",
+      "currentDate": "13/01/2021",
+      "id": 3
+    },
+    {
+      "name": "tst4",
+      "email": "tst4@gmail.com",
+      "CPF": "444.444.444-44",
+      "currentDate": "13/01/2021",
+      "id": 4
+    },
+    {
+      "name": "tst5",
+      "email": "tst5@gmail.com",
+      "CPF": "555.555.555-55",
+      "currentDate": "13/01/2021",
+      "id": 5
+    }
+  ]
+}

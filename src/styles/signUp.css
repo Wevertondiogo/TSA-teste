@@ -1,5 +1,5 @@
 @import "./select.css";
-@import './auth.css';
+@import "./auth.css";
 .main {
   background-color: #fff;
 }
@@ -72,9 +72,8 @@
 
 .form-control::placeholder {
   font-weight: bold;
-  color: #445566;
-
-  /* opacity: 0.5; */
+  color: rgba(187, 204, 221, 0.4);
+  text-shadow: 0 0 2px rgba(187, 204, 221, 0.4);
 }
 .form .form-check {
   margin-left: 2%;

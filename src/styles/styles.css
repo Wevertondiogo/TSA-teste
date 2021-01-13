@@ -3,6 +3,7 @@
 @import "./section.css";
 @import "./signUp.css";
 @import "./footer.css";
+@import "./../list/list.css";
 body {
   font-family: "Nunito", sans-serif;
   background-color: #eff4f9;

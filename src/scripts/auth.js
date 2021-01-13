@@ -1,10 +1,3 @@
-const query = (q) => document.querySelector(q);
-const queryAll = (q) => document.querySelectorAll(q);
-
-const form = query(".form");
-const btn = query(".btn");
-const allInputs = queryAll("input");
-
 function hasError(field) {
   const validity = field.validity;
 
@@ -13,6 +6,8 @@ function hasError(field) {
   if (validity.valueMissing) return "Campo obrigatório.";
 
   if (validity.typeMismatch) return "formato de email incorreto.";
+
+  if (validity.patternMismatch) return "formato incorreto.";
 
   if (validity.tooShort) {
     const min = field.getAttribute("minLength");
@@ -71,7 +66,7 @@ function touchedField(event) {
   removeError(event.target);
 }
 
-function onSubmit(event, fields) {
+function handleError(event, fields) {
   if (!event.target.classList.contains("btn")) return;
 
   let error;
@@ -87,11 +82,12 @@ function onSubmit(event, fields) {
     }
   }
 
+  event.preventDefault();
   if (hasErrors) {
     event.preventDefault();
     hasErrors.focus();
-  }
-}
 
-form.addEventListener("blur", (event) => touchedField(event), true);
-form.addEventListener("click", (event) => onSubmit(event, allInputs));
+    return true;
+  } else return false;
+}
+export { touchedField, handleError };
